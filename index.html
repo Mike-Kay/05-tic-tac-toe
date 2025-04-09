@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="home-page page">
+      <div>
+        <img src="./assets/logo.svg" alt="logo-image" class="logo-img" />
+
+        <div class="player-mark-con">
+          <header>pick player 1's mark</header>
+
+          <div class="icon-con">
+            <button type="button" class="x-btn mark-btn">
+              <span>x</span>
+            </button>
+            <button type="button" class="o-btn mark-btn">
+              <span>o</span>
+            </button>
+          </div>
+          <p>remember : x goes first</p>
+        </div>
+
+        <div class="btn-con">
+          <button type="button" class="btn y-btn">new game (vs cpu)</button>
+          <button type="button" class="btn b-btn">new game (vs player)</button>
+          <p class="error-msg">please pick player 1's mark</p>
+        </div>
+      </div>
+    </div>
+    <!-- game page -->
+    <div class="game-page page">
+      <div>
+        <!-- Game Header -->
+        <header class="game-header grid-HF">
+          <img src="./assets/logo.svg" alt="logo-image" class="game-logo" />
+
+          <div class="turn">
+            <span class="player-turn">x</span>
+            <span>turn</span>
+          </div>
+
+          <img
+            src="./assets/icon-restart.svg"
+            alt="restart-icon"
+            class="restart-icon"
+            data-id="restart"
+          />
+        </header>
+        <!-- Game Tiles -->
+        <div class="game-tiles">
+          <button class="game-tile grid-1a" data-id="grid-1a">
+            <img class="mark-img" />
+          </button>
+          <button class="game-tile grid-2a" data-id="grid-2a">
+            <img class="mark-img" />
+          </button>
+          <button class="game-tile grid-3a" data-id="grid-3a">
+            <img class="mark-img" />
+          </button>
+          <button class="game-tile grid-1b" data-id="grid-1b">
+            <img class="mark-img" />
+          </button>
+          <button class="game-tile grid-2b" data-id="grid-2b">
+            <img class="mark-img" />
+          </button>
+          <button class="game-tile grid-3b" data-id="grid-3b">
+            <img class="mark-img" />
+          </button>
+          <button class="game-tile grid-1c" data-id="grid-1c">
+            <img class="mark-img" />
+          </button>
+          <button class="game-tile grid-2c" data-id="grid-2c">
+            <img class="mark-img" />
+          </button>
+          <button class="game-tile grid-3c" data-id="grid-3c">
+            <img class="mark-img" />
+          </button>
+        </div>
+        <!-- Game Footer -->
+        <div class="game-footer grid-HF">
+          <div class="player-x-score">
+            <span></span>
+            <p></p>
+          </div>
+          <div class="ties">
+            <span>ties</span>
+            <p></p>
+          </div>
+          <div class="player-o-score">
+            <span></span>
+            <p></p>
+          </div>
+        </div>
+        <!-- End of Game Footer -->
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal-container"></div>
+
+    <!-- JS -->
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
