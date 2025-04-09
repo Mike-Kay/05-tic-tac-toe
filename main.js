@@ -19,7 +19,7 @@ const preserveGameState = (gameTiles, mark) => {
 };
 
 window.addEventListener("DOMContentLoaded", () => {
-  gamePage.style.display = "none";
+  homePage.style.display = "grid";
   if (gameStart.hasOwnProperty("gameMode")) {
     if (gameStart.gameOn == true) {
       homePage.style.display = "none";
